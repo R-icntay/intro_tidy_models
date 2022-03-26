@@ -13,7 +13,9 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+suppressWarnings(if(!require("pacman")) install.packages("pacman"))
 
+pacman::p_load('tidyverse', 'here','tidymodels', 'nnet', 'xgboost', 'palmerpenguins', 'cowplot')
 ```
 
 Hello and welcome to this introductory tutorial of creating machine learning using the Tidymodels framework in R. The tidymodels framework is a collection of packages for modeling and machine learning using [**tidyverse**](https://www.tidyverse.org/) principles.
